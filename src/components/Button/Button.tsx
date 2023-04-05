@@ -1,13 +1,13 @@
 import React, { FC } from 'react';
 
-import './Button.css';
+import ButtonStyle from './Button.style';
 import { ButtonProps } from './Button.types';
 
 const Button: FC<ButtonProps>  = ({ type, text, onClick }) => {
     return (
-        <button type="button" className={`Button Button-${type}`} onClick={onClick}>
+        <ButtonStyle type="button" className={`Button Button-${type}`} onClick={onClick}>
             {text}
-        </button>
+        </ButtonStyle>
     )
 };
 
