@@ -9,6 +9,8 @@ const ButtonVariants = {
   outlined: ButtonOutlined,
 };
 
+console.log('error');
+
 const Button: FC<ButtonProps> = ({
   variant = 'contained',
   fill = 'secondary',
