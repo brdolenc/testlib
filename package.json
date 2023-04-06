@@ -66,7 +66,7 @@
     "typescript": "^5.0.3"
   },
   "scripts": {
-    "lint": "eslint src/**/*.{js,jsx,ts,tsx,json}",
+    "lint": "eslint src/**/*.{js,jsx,ts,tsx,json} --max-warnings=0",
     "pre-commit": "npm run lint",
     "build": "rollup -c",
     "storybook": "storybook dev -p 6006",
