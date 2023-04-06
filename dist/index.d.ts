@@ -1,4 +1,4 @@
-import { MouseEventHandler, FC } from 'react';
+import React, { MouseEventHandler, FC } from 'react';
 
 interface ButtonProps {
     type: 'primary' | 'secondary' | 'error';
@@ -8,4 +8,10 @@ interface ButtonProps {
 
 declare const Button: FC<ButtonProps>;
 
-export { Button };
+interface FlexoThemeProviderProps {
+    theme?: object | boolean;
+    children: React.ReactNode;
+}
+declare const FlexoThemeProvider: FC<FlexoThemeProviderProps>;
+
+export { Button, FlexoThemeProvider };

@@ -1,9 +1,9 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const ButtonCp = styled.button`
-    background-color: #FF0000;
-    padding: 15px 30px;
-    border: 1px solid #000000;
-    border-radius: 30px;
-    color: #FFFFFF;
+  ${({ theme }) => css`
+    color: ${theme.colors.white};
+    border: ${theme.border.weight.sm} solid ${theme.brand.primary};
+    background-color: ${theme.brand.primary};
+  `}
 `;
