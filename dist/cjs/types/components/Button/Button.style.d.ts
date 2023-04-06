@@ -1,1 +1,1 @@
-export declare const ButtonStyle: import("styled-components").StyledComponent<"button", any, {}, never>;
+export declare const ButtonCp: import("styled-components").StyledComponent<"button", any, {}, never>;

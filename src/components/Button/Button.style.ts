@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
-export const ButtonStyle = styled.button`
-  background-color: #FF0000;
-  padding: 10px;
-  color: #FFFFFF;
-`
+export const ButtonCp = styled.button`
+    background-color: #00FF00;
+    padding: 15px;
+`;
