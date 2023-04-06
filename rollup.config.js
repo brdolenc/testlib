@@ -5,15 +5,13 @@ import { terser } from 'rollup-plugin-terser';
 import external from 'rollup-plugin-peer-deps-external';
 import dts from 'rollup-plugin-dts';
 import postcss from 'rollup-plugin-postcss';
-import babel from 'rollup-plugin-babel';
 
 import packageJson from "./package.json" assert { type: "json" };
-
-const extensions = ['.js', '.jsx', '.ts', '.tsx'];
 
 export default [
     {
         input: 'src/index.ts',
+        external: ['styled-components'],
         output: [
             {
                 file: packageJson.main,
@@ -33,21 +31,7 @@ export default [
             commonjs(),
             typescript({ tsconfig: './tsconfig.json' }),
             postcss(),
-            terser(),
-            babel({
-                extensions,
-                exclude: 'node_modules/**',
-                presets: [
-                  [
-                    '@babel/preset-env',
-                    {
-                      loose: true,
-                      modules: false,
-                    },
-                  ],
-                ],
-                plugins: ['babel-plugin-styled-components'],
-            }),
+            terser()
         ],
     },
     {
