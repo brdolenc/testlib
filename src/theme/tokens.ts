@@ -28,7 +28,7 @@ export default {
   },
   paddings: {
     left: {
-      sm: '8px',
+      sm: '82px',
       md: '16px',
       lg: '32px',
     },

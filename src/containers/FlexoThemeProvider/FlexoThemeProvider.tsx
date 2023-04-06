@@ -8,7 +8,7 @@ export interface FlexoThemeProviderProps {
   children: React.ReactNode;
 }
 
-const FlexoThemeProvider: FC<FlexoThemeProviderProps> = ({ children, theme }) => {
+const FlexoThemeProvider: FC<FlexoThemeProviderProps> = ({ children, theme = false }) => {
   if (!theme) {
     return <ThemeProvider theme={tokens}>{children}</ThemeProvider>;
   }

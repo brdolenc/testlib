@@ -1,13 +1,30 @@
 import React, { FC } from 'react';
 
-import { ButtonCp } from './Button.style';
+import { ButtonGhost, ButtonOutlined, ButtonContained } from './Button.style';
 import { ButtonProps } from './Button.types';
 
-const Button: FC<ButtonProps> = ({ type, text, onClick }) => (
-  <ButtonCp type="button" className={`Button Button-${type}`} onClick={onClick}>
-    {text}
-  </ButtonCp>
+const ButtonVariants = {
+  contained: ButtonContained,
+  ghost: ButtonGhost,
+  outlined: ButtonOutlined,
+};
 
-);
+const Button: FC<ButtonProps> = ({
+  variant = 'contained',
+  fill = 'secondary',
+  size = 'md',
+  icon,
+  text,
+  onClick,
+}) => {
+  const ButtonVariant = ButtonVariants[variant];
+  return (
+    <ButtonVariant fill={fill} size={size} onClick={onClick}>
+      {icon && icon}
+      {' '}
+      {text}
+    </ButtonVariant>
+  );
+};
 
 export default Button;
