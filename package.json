@@ -67,8 +67,10 @@
   },
   "scripts": {
     "lint": "eslint src/**/*.{js,jsx,ts,tsx,json}",
+    "pre-commit": "npm run lint",
     "build": "rollup -c",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "prepare": "husky install"
   }
 }
