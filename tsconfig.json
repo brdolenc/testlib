@@ -1,7 +1,5 @@
 {
     "compilerOptions": {
-      /* Visit https://aka.ms/tsconfig.json to read more about this file */
-  
       "target": "es5",
       "module": "esnext",
       "jsx": "react",
@@ -16,16 +14,5 @@
       "skipLibCheck": true,
       "forceConsistentCasingInFileNames": true,
       "emitDeclarationOnly": true
-    },
-    "include": [
-      "src/**/**/*", 
-      "src/*", 
-      "src/**/*"
-    ],
-    "exclude": [
-        "node_modules",
-        "dist",
-        "src/**/**/*.stories.tsx",
-        "src/**/**/*.test.tsx"
-    ]
+    }
   }
