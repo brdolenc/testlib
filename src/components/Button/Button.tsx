@@ -21,7 +21,7 @@ const Button: FC<ButtonProps> = ({
   return (
     <ButtonVariant fill={fill} size={size} onClick={onClick}>
       {icon && icon}
-      {' '}
+      9 {' '}
       {text}
     </ButtonVariant>
   );
