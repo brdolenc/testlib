@@ -6,7 +6,11 @@ import { TitleProps } from './Title.types';
 const Title: FC<TitleProps> = ({
   text,
 }) => (
-  <TitleStyle>{text}</TitleStyle>
+  <TitleStyle>
+    1:
+    {' '}
+    {text}
+  </TitleStyle>
 );
 
 export default Title;
