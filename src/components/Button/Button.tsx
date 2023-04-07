@@ -11,16 +11,12 @@ const ButtonVariants = {
 
 const Button: FC<ButtonProps> = ({
   variant = 'contained',
-  fill = 'primary',
-  size = 'md',
-  icon,
   text,
   onClick,
 }) => {
   const ButtonVariant = ButtonVariants[variant];
   return (
-    <ButtonVariant fill={fill} size={size} onClick={onClick}>
-      {icon && icon}
+    <ButtonVariant onClick={onClick}>
       9 {' '}
       {text}
     </ButtonVariant>
