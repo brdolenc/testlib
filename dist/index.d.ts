@@ -1,7 +1,10 @@
-import React, { MouseEventHandler, FC } from 'react';
+import React, { ReactNode, MouseEventHandler, FC } from 'react';
 
 interface ButtonProps {
-    type: 'primary' | 'secondary' | 'error';
+    variant?: 'contained' | 'outlined' | 'ghost';
+    fill?: 'primary' | 'secondary';
+    size?: 'sm' | 'md' | 'lg';
+    icon?: ReactNode | boolean;
     text: string;
     onClick: MouseEventHandler<HTMLButtonElement>;
 }

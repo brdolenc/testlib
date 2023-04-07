@@ -11,7 +11,7 @@ const ButtonVariants = {
 
 const Button: FC<ButtonProps> = ({
   variant = 'contained',
-  fill = 'secondary',
+  fill = 'primary',
   size = 'md',
   icon,
   text,
