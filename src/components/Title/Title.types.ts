@@ -1,3 +1,3 @@
-export interface ButtonProps {
+export interface TitleProps {
   text: string
 }
