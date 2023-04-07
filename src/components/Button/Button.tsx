@@ -17,7 +17,7 @@ const Button: FC<ButtonProps> = ({
   const ButtonVariant = ButtonVariants[variant];
   return (
     <ButtonVariant onClick={onClick}>
-      9 {' '}
+      9 d {' '}
       {text}
     </ButtonVariant>
   );
