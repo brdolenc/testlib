@@ -1,6 +1,6 @@
 {
   "name": "flexo",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Flexo design system",
   "main": "dist/cjs/index.ts",
   "module": "dist/esm/index.ts",

@@ -7,7 +7,7 @@ const Title: FC<TitleProps> = ({
   text,
 }) => (
   <TitleStyle>
-    1:
+    2:
     {' '}
     {text}
   </TitleStyle>
